@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg,#abf8bd, #6bb98a);
+}
+header nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 115px;
+    background: rgb(36, 98, 50);
+}
+nav .navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto 20px auto;
+    z-index: 12;
+}
+nav .navbar .logo{
+    height: 100%;
+    width: 150px;
+    margin: 0 10px 25px 0;
+}
+.navbar .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;   
+    padding: 16px;
+}
+.navbar .menu{
+    display: flex;
+}
+.navbar .menu li{
+    list-style: none;
+    margin: 0 15px 25px 0;
+}
+.menu li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+}
+.menu li a:hover{
+    color: #042e0e;
+}
+.navbar .search-box{
+    position: relative;
+    height: 50px;
+    width: 250px;
+}
+.search-box input[type="text"]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: #1b3425;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #1b3425;
+    border-radius: 8px;
+    padding: 0 10px 0 40px;
+}
+.search-box a{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    color: #1b3425;
+    font-size: 20px;
+    transform: translateY(-50%);
+    padding: 0 5px 0 0;
+    border-right: 2px solid #1b3425;
+}
+.content{
+    position:absolute;
+    top: 35%;
+    left: 15%;
+}
+.text-content .text{
+    font-size: 40px;
+    color: #042e0e;
+}
+.text-content .name{
+    font-size: 80px;
+    color: #00701a;
+    margin: -12px 0 0 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #042e0e;
+    animation: name 5s steps(25) infinite;
+}
+.content .job{
+    padding: 15px 0 15px 0;
+    font-size: 20px;
+    color: #042e0e;
+    display: flex;
+}
+.job i{
+    margin-top: 0 20px 0 0;
+    padding: 10px;
+    top: 25px;
+}
+@keyframes name{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 9ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+.content .buttons{
+    margin: 20px 0 0 50px;
+}
+.content .buttons button{
+    color: #d6fad3;
+    margin: 0 10px;
+    padding: 8px 16px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background: linear-gradient(135deg,#1b6c2e 10%, #00d053 100%);
+    transition: all 0.3s ease;
+}
+.content .buttons button:hover{
+    transform: scale(0.98);
+    background: #274e36;
+}
+section .drink img{
+    position: absolute;
+    left: 500px;
+    top: 30px;
+    bottom: 20px;
+    margin: 125px;
+    height: 79%;
+    z-index: 3;
+}
+
+section .media-icons{
+    position: absolute;
+    left: 258px;
+    bottom: 60px;
+    display: flex;
+}
+.media-icons a{
+    margin-left: 8px;
+    font-size: 20px;
+    color: #1b3425;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+.media-icons a:hover{
+    opacity: 1;
+}
