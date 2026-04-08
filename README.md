@@ -1,2 +1,2 @@
-# SimpleWebsite
-Simple Website
+# SimplePortfolioWebsite
+Create Simple Portfolio Website
